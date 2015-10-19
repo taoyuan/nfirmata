@@ -18,6 +18,15 @@
     "serial"
   ],
   "repository": "taoyuan/nfirmata",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "es6-map": "^0.1.2",
+    "eventemitter2": "^0.4.14",
+    "lodash": "^3.10.1",
+    "object-assign": "^4.0.1",
+    "rewire": "^2.3.4",
+    "serialport": "^2.0.1"
+  },
   "devDependencies": {
     "chai": "^3.3.0",
     "gulp": "^3.6.0",
@@ -36,14 +45,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT",
-  "dependencies": {
-    "debug": "^2.2.0",
-    "es6-map": "^0.1.2",
-    "eventemitter2": "^0.4.14",
-    "lodash": "^3.10.1",
-    "object-assign": "^4.0.1",
-    "rewire": "^2.3.4",
-    "serialport": "^2.0.1"
-  }
+  "license": "MIT"
 }
