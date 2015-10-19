@@ -1,0 +1,49 @@
+{
+  "name": "nfirmata",
+  "version": "0.1.0",
+  "description": "A node firmata library",
+  "homepage": "",
+  "author": {
+    "name": "taoyuan",
+    "email": "towyuan@outlook.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/firmata.js",
+  "keywords": [
+    "firmata",
+    "communication",
+    "serial"
+  ],
+  "repository": "taoyuan/nfirmata",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^0.4.5",
+    "gulp-plumber": "^1.0.0",
+    "mocha": "^2.3.3",
+    "should": "^7.1.0",
+    "sinon": "^1.17.1"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "es6-map": "^0.1.2",
+    "eventemitter2": "^0.4.14",
+    "lodash": "^3.10.1",
+    "object-assign": "^4.0.1",
+    "rewire": "^2.3.4",
+    "serialport": "^2.0.1"
+  }
+}
