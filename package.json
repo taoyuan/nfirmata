@@ -8,10 +8,7 @@
     "email": "towyuan@outlook.com",
     "url": ""
   },
-  "files": [
-    "lib"
-  ],
-  "main": "lib/firmata.js",
+  "main": "lib/index.js",
   "keywords": [
     "firmata",
     "communication",

@@ -1,13 +1,13 @@
 var rewire = require("rewire");
-var firmata = process.env.FIRMATA_COV ?
-  rewire("../lib-cov/firmata") :
-  rewire("../lib/firmata");
+//var firmata = process.env.FIRMATA_COV ?
+//  rewire("../lib-cov/index") :
+//  rewire("../lib/index");
 var SerialPort = require("./MockSerialPort").SerialPort;
 var Encoder7Bit = require("../lib/encoder7bit");
 var should = require("should");
 var sinon = require("sinon");
 
-var Board = firmata.Board;
+var Board = rewire('../lib/board');
 var spy;
 
 var ANALOG_MAPPING_QUERY = 0x69;
@@ -67,7 +67,7 @@ describe("board", function () {
 
     board._events.length = 0;
 
-    firmata.__set__("SerialPort", spy);
+    Board.__set__("SerialPort", spy);
   });
 
   it("uses serialport defaults", function (done) {
