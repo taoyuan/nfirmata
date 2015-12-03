@@ -17,9 +17,9 @@ gulp.task('static', function () {
     //.pipe(eslint.failAfterError());
 });
 
-gulp.task('nsp', function (cb) {
-  nsp('package.json', cb);
-});
+//gulp.task('nsp', function (cb) {
+//  nsp('package.json', cb);
+//});
 
 gulp.task('pre-test', function () {
   return gulp.src('lib/**/*.js')
@@ -54,5 +54,5 @@ gulp.task('coveralls', ['test'], function () {
     .pipe(coveralls());
 });
 
-gulp.task('prepublish', ['nsp']);
+gulp.task('prepublish', [/*'nsp'*/]);
 gulp.task('default', ['static', 'test', 'coveralls']);
