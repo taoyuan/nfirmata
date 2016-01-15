@@ -11,15 +11,6 @@
 $ npm install --save nfirmata
 ```
 
-
-## Usage
-
-```js
-var nfirmata = require('nfirmata');
-
-nfirmata('Rainbow');
-```
-
 ## License
 
 MIT © [taoyuan]()
